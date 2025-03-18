@@ -1,0 +1,30 @@
+{
+  "name": "vs-reasoning-panel",
+  "version": "1.0.0",
+  "description": "AI-Enhanced Reasoning Panel for Visual Studio Code",
+  "main": "extension.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["vscode", "extension", "reasoning", "ai"],
+  "author": "Digital Fabrica",
+  "license": "ISC",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "dependencies": {
+    "@types/vscode": "^1.85.0",
+    "express": "^4.18.2",
+    "ws": "^8.16.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "contributes": {
+    "commands": [{
+      "command": "reasoningPanel.start",
+      "title": "Start AI Reasoning Panel"
+    }]
+  }
+}
